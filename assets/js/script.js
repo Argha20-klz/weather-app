@@ -251,7 +251,7 @@
 // //   feelsLike.textContent = data.current.feelslike_c;
 // // }
 
-const apiKey = "0230bf14d6d34e698e5135029242211";
+const apiKey = "6c7686791a104567831103501241712";
 const baseUrl = "https://api.weatherapi.com/v1";
 let searchbox = document.getElementById("location_input");
 const backgroundVideo = document.getElementById("background_video");

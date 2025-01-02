@@ -7,13 +7,13 @@ const videoApiKey = "woY8cyahcVhkuHTAz0PRe0dqvecOg7xIPVNDVglm6czJlr1Sn6SV3IZg"; 
 // Helper to simplify weather condition
 function getSimplifiedQuery(condition) {
   const lowerCondition = condition.toLowerCase();
-  if (lowerCondition.includes("rain")) return "rain";
+  if (lowerCondition.includes("rain")) return "rain drop";
   if (lowerCondition.includes("shower")) return "shower";
   if (lowerCondition.includes("thunder")) return "thunder";
   if (lowerCondition.includes("snow")) return "snow";
   if (lowerCondition.includes("cloudy")) return "rain clouds";
   if (lowerCondition.includes("sunny")) return "sunny";
-  if (lowerCondition.includes("mist")) return "mist weather";
+  if (lowerCondition.includes("mist")) return "mist";
   if (lowerCondition.includes("sleet")) return "sleet";
   if (lowerCondition.includes("clear")) return "clear weather";
   if (lowerCondition.includes("overcast")) return "overcast weather";
@@ -122,7 +122,7 @@ searchbox.addEventListener("keyup", (e) => {
       return;
     }
     getResults(location); // Fetch weather for the entered location
-  }, 1500); // 3000ms delay after the last key press
+  }, 1800); // 3000ms delay after the last key press
 });
 
 // Existing dataFill function to update weather details

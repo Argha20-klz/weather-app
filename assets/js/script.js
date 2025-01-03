@@ -122,7 +122,7 @@ searchbox.addEventListener("keyup", (e) => {
       return;
     }
     getResults(location); // Fetch weather for the entered location
-  }, 1800); // 3000ms delay after the last key press
+  }, 1800); // 1800ms delay after the last key press
 });
 
 // Existing dataFill function to update weather details

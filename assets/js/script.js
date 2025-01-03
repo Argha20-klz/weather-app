@@ -97,7 +97,7 @@ function getResults(area) {
 
 // Window load event
 window.onload = () => {
-  getResults("Basudebpur"); // Default location
+  getResults("Contai"); // Default location
 };
 
 let debounceTimeout;

@@ -7,7 +7,7 @@ const videoApiKey = "woY8cyahcVhkuHTAz0PRe0dqvecOg7xIPVNDVglm6czJlr1Sn6SV3IZg"; 
 // Helper to simplify weather condition
 function getSimplifiedQuery(condition) {
   const lowerCondition = condition.toLowerCase();
-  if (lowerCondition.includes("rain")) return "rain drop";
+  if (lowerCondition.includes("rain")) return "rain shower";
   if (lowerCondition.includes("shower")) return "shower";
   if (lowerCondition.includes("thunder")) return "thunder";
   if (lowerCondition.includes("snow")) return "snow";
@@ -97,7 +97,7 @@ function getResults(area) {
 
 // Window load event
 window.onload = () => {
-  getResults("London"); // Default location
+  getResults("Basudebpur"); // Default location
 };
 
 let debounceTimeout;
